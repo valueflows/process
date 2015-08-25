@@ -4,11 +4,11 @@ This is separated out from the [OVN vocab](https://github.com/openvocab/ovn), of
 
 ## Why?
 
-We know of two different projects that use Process in compatible ways, and are interested in collaborating. We hope more will come.
+We know of three different projects that use Process in compatible ways, and are interested in collaborating. We hope more will come.
 
 ## Who uses this?
 
-So far, [NRP](https://github.com/valnet/valuenetwork) and [IPOTables](http://ipotables.net/). And you?
+So far, [NRP](https://github.com/valnet/valuenetwork), [IPOTables](http://ipotables.net/), and [Local Economic Development](http://locecon.org/). And you?
 
 ## Overview of Processes
 
@@ -34,9 +34,13 @@ This is the IPOTables view of processes. The idea in the center of IPO is to tak
 
 I-P-O documentation helps to monitor, communicate and connect flows of energy, materials, components and (by)products.
 
+This is an example of the Locecon view: 
+
+![Loecon cycle](https://github.com/openvocab/process/blob/master/images/locecon_cycle.png)
+
 ## Goal
 
-The goal of this process is to take these inputs (NRP, IPOTables, and any other projects that want to join) and create a common vocabulary that brings them together.
+The goal of this process is to take these inputs (NRP, IPOTables, Locecon, and any other projects that want to join) and create a common vocabulary that brings them together.
 
 
 
