@@ -20,7 +20,7 @@ Or for a bad example: a CAFO (Confined Animal Feeding Operation) produces a lot 
 
 One of the inputs to the CAFO process is antibiotics. The animals are filled with antibiotics because they get sick in the CAFO environment. And the antibiotics are also an output, mixed in with the manure.
 
-The antibiotics then breed resistant bacteria, which end up in hospitals, killing the people, because the common antibiotics no longer work.
+The antibiotics then breed resistant bacteria, which end up in the people, and send them to the hospital, and then kill the people, because the common antibiotics no longer work. And the resistant bacteria remain in the hospital to kill other people.
 
 ## Pictures!
 
