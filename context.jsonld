@@ -1,0 +1,17 @@
+{
+  "@context": [
+    "https://rawgit.com/valueflows/valueflows/master/context.jsonld",
+    {
+      "Process": "vf:Process"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "vf:Process",
+      "@type": "owl:Class",
+      "rdfs:label": {
+        "en": "Process"
+      }
+    }
+  ]
+}
