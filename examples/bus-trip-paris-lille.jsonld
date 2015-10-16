@@ -1,0 +1,105 @@
+ {
+  "@context": [
+    "https://w3id.org/role/",
+    "https://rawgit.com/valueflows/process/master/context.jsonld",
+    {
+      "role": "https://w3id.org/role/",
+      "lgd": "http://linkedgeodata.org/triplify/",
+      "ex": "https://vocab.example/",
+      "h4pid": "https://graph.hackers4peace.net/"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "h4pid:fcfb7943-2fc0-4c47-9da5-b25c4eb5240a",
+      "@type": [ "ex:BusTrip", "Process" ],
+      "displayName": "Bus Trip: Paris -> Lille",
+      "ex:expectedStartTime": "2015-10-T13:00:00+02:00",
+      "ex:expectedEndTime": "2015-10-T15:55:00+02:00",
+      "ex:actualStartTime": "2015-10-T13:35:00+02:00",
+      "ex:actualEndTime": "2015-10-T17:22:00+02:00",
+      "ex:origin": "lgd:relation7444",
+      "ex:destination": "lgd:relation58404",
+      "role:carier": {
+        "@type": "ex:Organization",
+        "url": "http://megabus.com/",
+        "displayName": "Megabus"
+      },
+      "role:driver": [
+        { "ex:uuid": "58278377-055e-41e3-8da2-3cec133999f3" }
+      ],
+      "ex:instrument": [
+        "h4pid:e78c4bd0-a5c2-4592-b42c-37edc6b948c7",
+        "h4pid:0cf0c0f5-6f0f-4e07-a1df-18c3f25972b2",
+        "h4pid:c0c663b3-aa1f-408c-a344-93efb7a887ab"
+
+      ],
+      "role:passenger": [
+        "https://graph.wwelves.org/ef093385-8906-4c78-9a69-9217c76013a8"
+      ]
+    }, {
+      "@id": "h4pid:543b34b0-1b6b-45e9-8aff-74ec39b45b4b",
+      "@type": [ "ex:Travel", "ex:Benefit", "vf:Resource" ],
+      "subject": "h4pid:fcfb7943-2fc0-4c47-9da5-b25c4eb5240a",
+      "relationship": "role:passanger",
+      "object": "https://graph.wwelves.org/ef093385-8906-4c78-9a69-9217c76013a8",
+      "displayName": "elf Pavlik traveling by bus Paris -> Lille",
+      "ex:expectedStartTime": "2015-10-T13:00:00+02:00",
+      "ex:expectedEndTime": "2015-10-T15:55:00+02:00",
+      "ex:actualStartTime": "2015-10-T13:35:00+02:00",
+      "ex:actualEndTime": "2015-10-T17:22:00+02:00",
+      "ex:quantityNode": {
+        "ex:unit": "hour",
+        "ex:amount": 3.8
+      }
+    }, {
+      "@id": "h4pid:9b639c7b-348e-43a3-844b-6b3a41655280",
+      "@type": [ "ex:Driving", "ex:Work", "ex:Service", "vf:Resource" ],
+      "displayName": "??? driving a bus Paris -> Lille",
+      "subject": "h4pid:fcfb7943-2fc0-4c47-9da5-b25c4eb5240a",
+      "relationship": "role:driver",
+      "object": { "displayName": "???", "uuid": "58278377-055e-41e3-8da2-3cec133999f3" },
+      "ex:expectedStartTime": "2015-10-T13:00:00+02:00",
+      "ex:expectedEndTime": "2015-10-T15:55:00+02:00",
+      "ex:actualStartTime": "2015-10-T13:35:00+02:00",
+      "ex:actualEndTime": "2015-10-T17:22:00+02:00",
+      "ex:quantityNode": {
+        "ex:unit": "hour",
+        "ex:amount": 3.8
+      }
+    }, {
+      "@id": "h4pid:e78c4bd0-a5c2-4592-b42c-37edc6b948c7",
+      "@type": [ "ex:Usage","vf:Resource" ],
+      "displayName": "bus usage for bus trip Paris -> Lille",
+      "subject": "h4pid:fcfb7943-2fc0-4c47-9da5-b25c4eb5240a",
+      "relationship": "ex:instrument",
+      "object": { "@type": "ex:Vehicle" },
+      "ex:quantityNode": {
+        "ex:unit": "hour",
+        "ex:amount": 10
+      }
+    }, {
+      "@id": "h4pid:0cf0c0f5-6f0f-4e07-a1df-18c3f25972b2",
+      "@type": [ "ex:Usage","vf:Resource" ],
+      "displayName": "motorway usage for bus trip Paris -> Lille",
+      "subject": "h4pid:fcfb7943-2fc0-4c47-9da5-b25c4eb5240a",
+      "relationship": "ex:instrument",
+      "object": { "@type": "ex:Motorway" },
+      "quantityNode": {
+        "unit": "km",
+        "amount": 360
+      }
+    }, {
+      "@id": "h4pid:c0c663b3-aa1f-408c-a344-93efb7a887ab",
+      "@type": [ "ex:Usage","vf:Resource" ],
+      "displayName": "fuel usage for bus trip Paris -> Lille",
+      "subject": "h4pid:fcfb7943-2fc0-4c47-9da5-b25c4eb5240a",
+      "relationship": "ex:instrument",
+      "object": { "@type": "ex:Diesel" },
+      "quantityNode": {
+        "unit": "liter",
+        "amount": 200
+      }
+    }
+  ]
+}
