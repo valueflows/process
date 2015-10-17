@@ -1,0 +1,127 @@
+{
+  "@context": [
+    "https://w3id.org/role/",
+    "https://rawgit.com/valueflows/process/master/context.jsonld",
+    {
+      "role": "https://w3id.org/role/",
+      "ex": "https://vocab.example/",
+      "h4pid": "https://graph.hackers4peace.net/",
+      "rdfs:seeAlso": { "@type": "@id" }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "h4pid:57b8691e-6c8e-415a-a2f6-4289a322e18f",
+      "@type": [ "vf:Process", "ex:Meeting", "ex:Online" ],
+      "label": "vf Hangout #2: Oct, 20th 2015",
+      "ex:expectedStartTime": "2015-10-20T20:00:00+00:00",
+      "ex:expectedEndTime": "2015-10-20T21:00:00+00:00",
+      "role:venue": [
+        {
+          "@id": "h4pid:1c6d448b-e275-4388-995b-3df5e66532c0",
+          "@type": [ "vf:Resource", "ex:GoogleHangout", "ex:Online" ]
+        },
+        {
+          "@id": "h4pid:7fa9fc15-5df5-459d-9cf6-3dc656de86d3A",
+          "@type": [ "vf:Resource", "ex:GitterChatroom", "ex:Online" ],
+          "url": "https://gitter.im/valueflows"
+        }
+      ],
+      "role:host": [
+        "http://nrp.webfactional.com/accounting/agent/1",
+        "https://graph.wwelves.org/ef093385-8906-4c78-9a69-9217c76013a8"
+      ],
+      "role:scribe": [
+        "http://nrp.webfactional.com/accounting/agent/6"
+      ],
+      "role:invitee": [
+        "http://dinosaur.is#i"
+      ],
+      "role:attendee": [],
+      "role:agenda": {
+        "@id": "h4pid:861d9b59-6343-4f45-9110-d0a2b14982d0",
+        "@type": [ "vf:Resrource", "ex:WikiPage" ],
+        "url": "https://github.com/valueflows/valueflows/wiki/Meetings#next"
+      },
+      "role:proposal": [
+        {
+          "@id": "h4pid:66658c9c-09b6-48d1-a4b2-cdd9ff7d36e2",
+          "@type": [ "vf:Resource", "ex:PullRequest" ],
+          "url": "https://github.com/valueflows/agent/pull/49"
+        }
+      ],
+      "role:minutes": {
+        "@id": "h4pid:c232bf80-b4d7-43a2-9079-23b5a3b107f9",
+        "@type": [ "vf:Resrouce", "ex:WebPage" ],
+        "url": "https://github.com/valueflows/valueflows/blob/master/minutes/2015-10-20-minutes.txt"
+      },
+      "role:resolution": [],
+      "role:todo": [],
+      "rdfs:seeAlso": [
+        "h4pid:a89abe4b-8cbd-4657-b5cd-550d03a4e017",
+        "h4pid:68b9c830-d1b9-41d1-9ba7-6a0bb0da8388",
+        "h4pid:a6387753-ab33-4824-9781-5ce9e32bdf4b",
+        "h4pid:f96ee3ef-62bd-46d4-8bcb-f91a3255a59a",
+        "h4pid:7d6f447f-f76b-4a5b-9893-5fabf3d98de7",
+        "h4pid:358a2499-4705-4709-bb43-a1500779eae4",
+        "h4pid:e613ef55-f82f-44f9-8c1c-a4bcfbdb0e9e",
+        "h4pid:631cc08c-98f9-4c9a-aadb-c15137191d13",
+        "h4pid:0b6ff48d-856a-4c64-8b23-460cbfc118f7"
+      ]
+    }, {
+      "@id": "h4pid:a89abe4b-8cbd-4657-b5cd-550d03a4e017",
+      "@type": [ "ex:Input", "ex:Usage", "ex:Online" ],
+      "subject": "h4pid:57b8691e-6c8e-415a-a2f6-4289a322e18f",
+      "relationship": "role:venue",
+      "object": "h4pid:1c6d448b-e275-4388-995b-3df5e66532c0"
+    }, {
+      "@id": "h4pid:68b9c830-d1b9-41d1-9ba7-6a0bb0da8388",
+      "@type": [ "ex:Input", "ex:Usage", "ex:Online" ],
+      "subject": "h4pid:57b8691e-6c8e-415a-a2f6-4289a322e18f",
+      "relationship": "role:venue",
+      "object": "h4pid:7fa9fc15-5df5-459d-9cf6-3dc656de86d3A"
+    }, {
+      "@id": "h4pid:a6387753-ab33-4824-9781-5ce9e32bdf4b",
+      "@type": [ "ex:Input", "ex:Work", "ex:Online" ],
+      "subject": "h4pid:57b8691e-6c8e-415a-a2f6-4289a322e18f",
+      "relationship": "role:host",
+      "object": "http://nrp.webfactional.com/accounting/agent/1"
+    }, {
+      "@id": "h4pid:f96ee3ef-62bd-46d4-8bcb-f91a3255a59a",
+      "@type": [ "ex:Input", "ex:Work", "ex:Online" ],
+      "subject": "h4pid:57b8691e-6c8e-415a-a2f6-4289a322e18f",
+      "relationship": "role:host",
+      "object": "https://graph.wwelves.org/ef093385-8906-4c78-9a69-9217c76013a8"
+    }, {
+      "@id": "h4pid:7d6f447f-f76b-4a5b-9893-5fabf3d98de7",
+      "@type": [ "ex:Input", "ex:Work", "ex:Online" ],
+      "subject": "h4pid:57b8691e-6c8e-415a-a2f6-4289a322e18f",
+      "relationship": "role:scribe",
+      "object": "http://nrp.webfactional.com/accounting/agent/6"
+    }, {
+      "@id": "h4pid:358a2499-4705-4709-bb43-a1500779eae4",
+      "@type": [ "ex:Input", "ex:Online" ],
+      "subject": "h4pid:57b8691e-6c8e-415a-a2f6-4289a322e18f",
+      "relationship": "role:invitee",
+      "object": "http://dinosaur.is#i"
+    }, {
+      "@id": "h4pid:e613ef55-f82f-44f9-8c1c-a4bcfbdb0e9e",
+      "@type": [ "ex:Input", "ex:Online" ],
+      "subject": "h4pid:57b8691e-6c8e-415a-a2f6-4289a322e18f",
+      "relationship": "role:agenda",
+      "object": "h4pid:861d9b59-6343-4f45-9110-d0a2b14982d0"
+    }, {
+      "@id": "h4pid:631cc08c-98f9-4c9a-aadb-c15137191d13",
+      "@type": [ "ex:Input", "ex:Online" ],
+      "subject": "h4pid:57b8691e-6c8e-415a-a2f6-4289a322e18f",
+      "relationship": "role:proposal",
+      "object": "h4pid:66658c9c-09b6-48d1-a4b2-cdd9ff7d36e2"
+    }, {
+      "@id": "h4pid:0b6ff48d-856a-4c64-8b23-460cbfc118f7",
+      "@type": [ "ex:Output", "ex:Online" ],
+      "subject": "h4pid:57b8691e-6c8e-415a-a2f6-4289a322e18f",
+      "relationship": "role:minutes",
+      "object": "h4pid:c232bf80-b4d7-43a2-9079-23b5a3b107f9"
+    }
+  ]
+}
