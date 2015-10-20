@@ -21,17 +21,18 @@
       "ex:origin": "lgd:relation7444",
       "ex:destination": "lgd:relation58404",
       "role:carier": {
+        "@id": "h4pid:6675d39f-1927-4ab7-94ff-fd9d11165e85",
         "@type": "ex:Organization",
         "url": "http://megabus.com/",
         "displayName": "Megabus"
       },
       "role:driver": [
-        { "ex:uuid": "58278377-055e-41e3-8da2-3cec133999f3" }
+        "h4pid:58278377-055e-41e3-8da2-3cec133999f3"
       ],
       "ex:instrument": [
-        "h4pid:e78c4bd0-a5c2-4592-b42c-37edc6b948c7",
-        "h4pid:0cf0c0f5-6f0f-4e07-a1df-18c3f25972b2",
-        "h4pid:c0c663b3-aa1f-408c-a344-93efb7a887ab"
+        "h4pid:2e96e18a-2a86-44af-bd33-bc673314fb8c",
+        "h4pid:3520b1be-35e4-4bdf-a83b-b6dfae0a78c2",
+        "h4pid:86df5a9c-05d5-42e4-a46d-18fdbaf3785b"
 
       ],
       "role:passenger": [
@@ -58,7 +59,7 @@
       "displayName": "??? driving a bus Paris -> Lille",
       "subject": "h4pid:fcfb7943-2fc0-4c47-9da5-b25c4eb5240a",
       "relationship": "role:driver",
-      "object": { "displayName": "???", "uuid": "58278377-055e-41e3-8da2-3cec133999f3" },
+      "object": "h4pid:58278377-055e-41e3-8da2-3cec133999f3",
       "ex:expectedStartTime": "2015-10-T13:00:00+02:00",
       "ex:expectedEndTime": "2015-10-T15:55:00+02:00",
       "ex:actualStartTime": "2015-10-T13:35:00+02:00",
@@ -73,7 +74,16 @@
       "displayName": "bus usage for bus trip Paris -> Lille",
       "subject": "h4pid:fcfb7943-2fc0-4c47-9da5-b25c4eb5240a",
       "relationship": "ex:instrument",
-      "object": { "@type": "ex:Vehicle" },
+      "object": {
+        "@id": "h4pid:86df5a9c-05d5-42e4-a46d-18fdbaf3785b",
+        "@type": "ex:Vehicle",
+        "@reverse": {
+          "ex:sub": {
+            "@id": "h4pid:7df55955-1496-470e-9534-da0e916d17f7",
+            "@type": "ex:Fleet"
+          }
+        }
+      },
       "ex:quantityNode": {
         "ex:unit": "hour",
         "ex:amount": 10
@@ -84,18 +94,36 @@
       "displayName": "motorway usage for bus trip Paris -> Lille",
       "subject": "h4pid:fcfb7943-2fc0-4c47-9da5-b25c4eb5240a",
       "relationship": "ex:instrument",
-      "object": { "@type": "ex:Motorway" },
+      "object": {
+        "@id": "h4pid:3520b1be-35e4-4bdf-a83b-b6dfae0a78c2",
+        "@type": [ "ex:Motorway" ],
+        "@reverse": {
+          "ex:sub": {
+            "@id": "h4pid:c685d5be-b908-4337-a3a7-e82f46421bb8",
+            "@type": "ex:RoadNetwork"
+          }
+        }
+      },
       "quantityNode": {
         "unit": "km",
         "amount": 360
       }
     }, {
       "@id": "h4pid:c0c663b3-aa1f-408c-a344-93efb7a887ab",
-      "@type": [ "ex:Usage","vf:Resource" ],
+      "@type": [ "ex:Consumption","vf:Resource" ],
       "displayName": "fuel usage for bus trip Paris -> Lille",
       "subject": "h4pid:fcfb7943-2fc0-4c47-9da5-b25c4eb5240a",
       "relationship": "ex:instrument",
-      "object": { "@type": "ex:Diesel" },
+      "object": {
+        "@id": "h4pid:2e96e18a-2a86-44af-bd33-bc673314fb8c",
+        "@type": [ "ex:DieselFuel" ],
+        "@reverse": {
+          "ex:sub": {
+            "@id": "h4pid:51ad6f94-6929-479b-bbc9-11e229e9272a",
+            "@type": "ex:FuelPool"
+          }
+        }
+      },
       "quantityNode": {
         "unit": "liter",
         "amount": 200
