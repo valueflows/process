@@ -34,12 +34,16 @@ Next, mix the dough in an automatic mixer or by hand for several minutes. Add th
 
 Next break apart the dough and shape into loaves. Allow 20 minutes of rising. Punch down the dough loaves and allow one more rise. 
 
-### Output/Input: Loaves
+### Output/Input: 
+
+* Loaves
 
  ## Process: Bake:
 
 After three hours, place in an oven preheated to 520 degrees F (yes–this is very hot). After 15 minutes, reduce the temperature to 470 for 20 minutes. For 15 more minutes, open the oven door a crack, which allows moisture to escape and facilitates crust formation. Remove the finished bread.
 
-### Output: Finished bread.
+### Output: 
+
+* Finished bread.
 
 From: http://www.smithsonianmag.com/arts-culture/what-makes-whole-grain-bread-so-hard-to-bake-63878
