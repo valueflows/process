@@ -1,6 +1,6 @@
 Dave Miller’s Basic Whole Wheat Bread
 
-Using Baker's Percentage, in which each of the ingredients is specified as a percentage of the flour ingredient by weight.
+Using [Baker's Percentage](https://en.wikipedia.org/wiki/Baker_percentage), in which each of the ingredients is specified as a percentage of the flour ingredient by weight.
 
 ### Inputs
 
