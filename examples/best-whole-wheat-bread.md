@@ -1,14 +1,16 @@
 Dave Miller’s Basic Whole Wheat Bread
 
+Using Baker's Percentage, in which each of the ingredients is specified as a percentage of the flour ingredient by weight.
+
 ### Inputs
 
-* 16 ounces whole wheat flour
+* whole wheat flour 100%
 
-* 16.32 ounces water (102 percent of flour weight, though extra dry flour may call for 105 percent, or 16.8 ounces, of water). Use 90% of the water for the Autolease process, save 10% for the next step.
+* water (102% of flour weight, though extra dry flour may call for 105%). Use 90% of the water for the Autolease process, save 10% for the next step.
 
 ## Process: Autolease:
 
-Mix the flour with 90 percent of the water in a bowl. Let sit for 30 minutes–a lapse of time called the”autolease,” during which enzymes activate and convert starches into sugar.
+Mix the flour with 90% of the water in a bowl. Let sit for 30 minutes–a lapse of time called the”autolease,” during which enzymes activate and convert starches into sugar.
 
 ### Output/Input:
 
@@ -16,9 +18,9 @@ Mix the flour with 90 percent of the water in a bowl. Let sit for 30 minutes–a
 
 ### Other inputs:
 
-* 10% of the water (1.632 ounces)
-* 3.2 ounces sourdough starter (or, for non-sourdough, 1 tsp activated dry yeast)
-* 0.38 ounces salt
+* 10% of the water
+* sourdough starter 2%
+* salt .025%
 
 ## Process: Mix final dough:
 
