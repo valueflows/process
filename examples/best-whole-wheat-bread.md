@@ -20,7 +20,7 @@ Mix the flour with 90 percent of the water in a bowl. Let sit for 30 minutes–a
 * 3.2 ounces sourdough starter (or, for non-sourdough, 1 tsp activated dry yeast)
 * 0.38 ounces salt
 
-## Process: Mix final dough
+## Process: Mix final dough:
 
 Next, mix the dough in an automatic mixer or by hand for several minutes. Add the remaining water, sourdough starter and salt. The dough will be very gooey–almost like batter. Allow it to sit for three hours in a bowl at room temperature.
 
