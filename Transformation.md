@@ -1,6 +1,6 @@
 # vf:Transformation
 
- a change in the composition of the resource(s)
+a change in the composition of the resource(s)
 
 ## super classes
 

@@ -22,6 +22,17 @@ One of the inputs to the CAFO process is antibiotics. The animals are filled wit
 
 The antibiotics then breed resistant bacteria, which end up in the people, and send them to the hospital, and then kill the people, because the common antibiotics no longer work. And the resistant bacteria remain in the hospital to kill other people.
 
+## Definitions
+
+* [vf:Process](https://github.com/valueflows/process/blob/master/Process.md)
+ * [vf:Transformation](https://github.com/valueflows/process/blob/master/Transformation.md)
+ * [vf:Transportation](https://github.com/valueflows/process/blob/master/Transportation.md)
+
+## Use Cases
+
+* [Make 3D printed part](https://github.com/valueflows/valueflows/blob/master/use-cases/make-3d-printed-part.md)
+* [Porridge preparation](https://github.com/valueflows/valueflows/blob/master/use-cases/porridge-preparation.md)
+
 ## Pictures!
 
 This is the NRP view of processes, which occur in resource flow networks, and live in three layers: Recipes, which describe how processes work. Plans, which describe processes which are intended to happen. And Reality, which is a record of processes that have already happened.
@@ -34,13 +45,10 @@ This is the IPOTables view of processes. The idea in the center of IPO is to tak
 
 I-P-O documentation helps to monitor, communicate and connect flows of energy, materials, components and (by)products.
 
-This is an example of the Locecon view: 
+This is an example of the Locecon view:
 
 ![Loecon cycle](https://github.com/openvocab/process/blob/master/images/locecon_cycle.png)
 
 ## Goal
 
 The goal of this process is to take these inputs (NRP, IPOTables, Locecon, and any other projects that want to join) and create a common vocabulary that brings them together.
-
-
-
