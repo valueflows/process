@@ -22,6 +22,12 @@ One of the inputs to the CAFO process is antibiotics. The animals are filled wit
 
 The antibiotics then breed resistant bacteria, which end up in the people, and send them to the hospital, and then kill the people, because the common antibiotics no longer work. And the resistant bacteria remain in the hospital to kill other people.
 
+## Model
+
+![VOWL](https://raw.githubusercontent.com/valueflows/process/master/images/vowl.png)
+
+[open diagram with interactive WebVOWL](http://vowl.visualdataweb.org/webvowl/index.html#iri=https://raw.githubusercontent.com/valueflows/process/master/process.ttl)
+
 ## Definitions
 
 * [vf:Process](https://github.com/valueflows/process/blob/master/Process.md)

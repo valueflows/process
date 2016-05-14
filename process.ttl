@@ -14,30 +14,51 @@ vf:Process
   a owl:Class ;
   rdfs:label "Process" .
 
+vf:Transformation
+  a owl:Class ;
+  rdfs:label "Transformation" ;
+  rdfs:subClassOf vf:Process .
+
+vf:Transportation
+  a owl:Class ;
+  rdfs:label "Transportation" ;
+  rdfs:subClassOf vf:Process .
+
 vf:Resource
   a owl:Class ;
   rdfs:label "Resource" .
-  
+
 # Properties
 
 vf:inflow
   a rdf:Property ;
   rdfs:label "inflow" ;
-  rdfs:range rdf:Property .
+  rdfs:domain vf:Resource ;
+  rdfs:range vf:Process .
+
+vf:outflow
+  a rdf:Property ;
+  rdfs:label "outflow" ;
+  rdfs:domain vf:Process ;
+  rdfs:range vf:Resource .
 
 vf:consume
   a rdf:Property ;
   rdfs:label "consume" ;
-  owl:subPropertyOf vf:inflow .
-  
+  rdfs:subPropertyOf vf:inflow .
+
 vf:use
   a rdf:Property ;
   rdfs:label "use" ;
-  owl:subPropertyOf vf:inflow .
+  rdfs:subPropertyOf vf:inflow .
+
+vf:create
+  a rdf:Property ;
+  rdfs:label "create" ;
+  rdfs:subPropertyOf vf:outflow .
 
 vf:context
   a owl:ObjectProperty ;
   rdfs:label "context" ;
   rdfs:domain vf:Process ;
   rdfs:range vf:Agent .
-
