@@ -8,18 +8,15 @@
 
 vf:Agent
   a owl:Class ;
-  rdfs:label "Agent" ;
-  rdfs:comment "" .
+  rdfs:label "Agent" .
 
 vf:Process
   a owl:Class ;
-  rdfs:label "Process" ;
-  rdfs:comment "" ;
+  rdfs:label "Process" .
 
 vf:Resource
   a owl:Class ;
-  rdfs:label "Resource" ;
-  rdfs:comment "" ;
+  rdfs:label "Resource" .
   
 # Properties
 
@@ -37,20 +34,10 @@ vf:use
   a rdf:Property ;
   rdfs:label "use" ;
   owl:subPropertyOf vf:inflow .
-  
-vf:name
-  a skos:prefLabel ;
-  rdfs:label "name" ;
-  rdfs:range skos:prefLabel ;
-  rdfs:domain vf:Process .
 
 vf:context
   a owl:ObjectProperty ;
   rdfs:label "context" ;
   rdfs:domain vf:Process ;
   rdfs:range vf:Agent .
-  
-vf:note
-  a owl:DatatypeProperty ;
-  rdfs:label "note" ;
-  rdfs:domain vf:Process, vf:Resource .
+
