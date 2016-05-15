@@ -1,6 +1,6 @@
 # vf:Input
 
-a slot which accepts resources going into the process
+a slot which accommodates resources going into the process
 
 ## phases
 
@@ -15,3 +15,5 @@ a slot which accepts resources going into the process
 * consume - for example an ingredient composed into the output, after the process the ingredient is gone
 * cite - for example a design file, neither used nor consumed, the file remains available at all times
 * work - labor power towards a process
+* accept - in processes like repair or maintentance, same resource will appear in [vf:Output](https://github.com/valueflows/process/blob/master/Output.md) with *improve* verb
+* pickup - specific for [vf:Transportation](https://github.com/valueflows/process/blob/master/Transportation.md), transported resource enter the process

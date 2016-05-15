@@ -52,10 +52,34 @@ vf:use
   rdfs:label "use" ;
   rdfs:subPropertyOf vf:inflow .
 
+vf:accept
+  a rdf:Property ;
+  rdfs:label "accept" ;
+  rdfs:subPropertyOf vf:infow .
+
+vf:pickup
+  a rdf:Property ;
+  rdfs:label "pick-up" ;
+  rdfs:subPropertyOf vf:inflow ;
+  rdfs:domain vf:Resource ;
+  rdfs:range vf:Transportation .
+
 vf:create
   a rdf:Property ;
   rdfs:label "create" ;
   rdfs:subPropertyOf vf:outflow .
+
+vf:return
+  a rdf:Property ;
+  rdfs:label "return" ;
+  rdfs:subPropertyOf vf:infow .
+
+vf:dropoff
+  a rdf:Property ;
+  rdfs:label "drop-off" ;
+  rdfs:subPropertyOf vf:outflow ;
+  rdfs:domain vf:Transportation ;
+  rdfs:range vf:Resource .
 
 vf:context
   a owl:ObjectProperty ;
