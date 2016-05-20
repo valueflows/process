@@ -11,5 +11,6 @@ a slot which accommodates resources going out of the process
 
 ## verbs
 * create - new resource created in that process
+* give - for example health care, used with [vf:Service](https://github.com/valueflows/resource/blob/master/Resource.md)
 * improve - in processes like repair or maintentance, same resource will appear in [vf:Input](https://github.com/valueflows/process/blob/master/Input.md) with *accept* verb
 * pickup - specific for [vf:Transportation](https://github.com/valueflows/process/blob/master/Transportation.md), transported resource enter the process
