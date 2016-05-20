@@ -8,81 +8,105 @@
 
 vf:Agent
   a owl:Class ;
-  rdfs:label "Agent" .
+  rdfs:label "vf:Agent" .
 
 vf:Process
   a owl:Class ;
-  rdfs:label "Process" .
+  rdfs:label "vf:Process" .
 
 vf:Transformation
   a owl:Class ;
-  rdfs:label "Transformation" ;
+  rdfs:label "vf:Transformation" ;
   rdfs:subClassOf vf:Process .
 
 vf:Transportation
   a owl:Class ;
-  rdfs:label "Transportation" ;
+  rdfs:label "vf:Transportation" ;
   rdfs:subClassOf vf:Process .
 
 vf:Resource
   a owl:Class ;
-  rdfs:label "Resource" .
+  rdfs:label "vf:Resource" .
+
+vf:Service
+  a owl:Class ;
+  rdfs:label "vf:Service" ;
+  rdfs:subClassOf vf:Resource .
 
 # Properties
 
 vf:inflow
   a rdf:Property ;
-  rdfs:label "inflow" ;
-  rdfs:domain vf:Resource ;
-  rdfs:range vf:Process .
+  rdfs:label "vf:inflow" ;
+  rdfs:domain vf:Process ;
+  rdfs:range vf:Resource .
 
 vf:outflow
   a rdf:Property ;
-  rdfs:label "outflow" ;
+  rdfs:label "vf:outflow" ;
   rdfs:domain vf:Process ;
   rdfs:range vf:Resource .
 
 vf:consume
   a rdf:Property ;
-  rdfs:label "consume" ;
+  rdfs:label "vf:consume" ;
   rdfs:subPropertyOf vf:inflow .
+
+vf:receive
+  a rdf:Property ;
+  rdfs:label "vf:receive" ;
+  rdfs:subPropertyOf vf:outflow ;
+  rdfs:domain vf:Process ;
+  rdfs:range vf:Service .
 
 vf:use
   a rdf:Property ;
-  rdfs:label "use" ;
+  rdfs:label "vf:use" ;
+  rdfs:subPropertyOf vf:inflow .
+
+vf:cite
+  a rdf:Property ;
+  rdfs:label "vf:cite" ;
   rdfs:subPropertyOf vf:inflow .
 
 vf:accept
   a rdf:Property ;
-  rdfs:label "accept" ;
+  rdfs:label "vf:accept" ;
   rdfs:subPropertyOf vf:infow .
 
 vf:pickup
   a rdf:Property ;
-  rdfs:label "pick-up" ;
+  rdfs:label "vf:pickup" ;
   rdfs:subPropertyOf vf:inflow ;
-  rdfs:domain vf:Resource ;
-  rdfs:range vf:Transportation .
+  rdfs:domain vf:Transportation ;
+  rdfs:range vf:Resource .
 
 vf:create
   a rdf:Property ;
-  rdfs:label "create" ;
+  rdfs:label "vf:create" ;
   rdfs:subPropertyOf vf:outflow .
 
-vf:return
+vf:improve
   a rdf:Property ;
-  rdfs:label "return" ;
-  rdfs:subPropertyOf vf:infow .
+  rdfs:label "vf:improve" ;
+  rdfs:subPropertyOf vf:outflow .
 
 vf:dropoff
   a rdf:Property ;
-  rdfs:label "drop-off" ;
+  rdfs:label "vf:dropoff" ;
   rdfs:subPropertyOf vf:outflow ;
   rdfs:domain vf:Transportation ;
   rdfs:range vf:Resource .
 
+vf:give
+  a rdf:Property ;
+  rdfs:label "vf:give" ;
+  rdfs:subPropertyOf vf:outflow ;
+  rdfs:domain vf:Process ;
+  rdfs:range vf:Service .
+
 vf:context
   a owl:ObjectProperty ;
-  rdfs:label "context" ;
+  rdfs:label "vf:context" ;
   rdfs:domain vf:Process ;
   rdfs:range vf:Agent .
