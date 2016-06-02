@@ -33,9 +33,7 @@ The antibiotics then breed resistant bacteria, which end up in the people, and s
 * [vf:Process](https://github.com/valueflows/process/blob/master/Process.md)
  * [vf:Transformation](https://github.com/valueflows/process/blob/master/Transformation.md)
  * [vf:Transportation](https://github.com/valueflows/process/blob/master/Transportation.md)
-* *vf:Port*
- * [vf:Input](https://github.com/valueflows/process/blob/master/Input.md)
- * [vf:Output](https://github.com/valueflows/process/blob/master/Output.md)
+* [vf:Port](https://github.com/valueflows/process/blob/master/Port.md)
 
 ## Use Cases
 
