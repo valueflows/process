@@ -1,4 +1,4 @@
-# vf:Port
+# vf:InputOrOutput
 
 a slot which accommodates resources going into the process or going out of the process
 
@@ -8,14 +8,14 @@ a slot which accommodates resources going into the process or going out of the p
 (relationships)
 
 ### vf:resource
-relates port to a resource
+relates input/output to a resource
 
 ### vf:action
-relates port to a verb (explained below)
+relates input/output to a verb (explained below)
 
 (reverse)
-### vf:port
-relates process to a port
+### vf:io
+relates process to a input/output
 
 ## Data Properties
 
@@ -36,7 +36,7 @@ relates process to a port
 * dropoff - specific for [vf:Transportation](https://github.com/valueflows/process/blob/master/Transportation.md), transported resource leaves the process
 
 ## Phases
-a Port doesn't change from one phase to another, each phase has distinct ports with relationships to ports in other phases.
+Input or Output doesn't change from one phase to another, each phase has distinct input/output with relationships to relevant input/output in other phases.
 
 * Recipe - often containing broad description of acceptable resources
 * Plan - in this stage one can narrow further acceptable inputs from Recipe and serve as foundation to cast an Intent
