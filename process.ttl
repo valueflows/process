@@ -33,8 +33,8 @@ vf:Resource
 vf:inflow
   a rdf:Property ;
   rdfs:label "inflow" ;
-  rdfs:domain vf:Resource ;
-  rdfs:range vf:Process .
+  rdfs:domain vf:Process ;
+  rdfs:range vf:Resource .
 
 vf:outflow
   a rdf:Property ;
@@ -57,12 +57,12 @@ vf:accept
   rdfs:label "accept" ;
   rdfs:subPropertyOf vf:infow .
 
-vf:pickup
+vf:load
   a rdf:Property ;
-  rdfs:label "pick-up" ;
+  rdfs:label "load" ;
   rdfs:subPropertyOf vf:inflow ;
-  rdfs:domain vf:Resource ;
-  rdfs:range vf:Transportation .
+  rdfs:domain vf:Transportation ;
+  rdfs:range vf:Resource .
 
 vf:create
   a rdf:Property ;
@@ -72,11 +72,11 @@ vf:create
 vf:return
   a rdf:Property ;
   rdfs:label "return" ;
-  rdfs:subPropertyOf vf:infow .
+  rdfs:subPropertyOf vf:outflow .
 
 vf:dropoff
   a rdf:Property ;
-  rdfs:label "drop-off" ;
+  rdfs:label "unload" ;
   rdfs:subPropertyOf vf:outflow ;
   rdfs:domain vf:Transportation ;
   rdfs:range vf:Resource .
