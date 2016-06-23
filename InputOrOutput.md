@@ -27,13 +27,13 @@ relates process to a input/output
 * cite - for example a design file, neither used nor consumed, the file remains available at all times
 * work - labor power towards a process
 * accept - in processes like repair or maintentance, same resource will appear in [vf:Output](https://github.com/valueflows/process/blob/master/Output.md) with *improve* verb
-* pickup - specific for [vf:Transportation](https://github.com/valueflows/process/blob/master/Transportation.md), transported resource enters the process
+* load - specific for [vf:Transportation](https://github.com/valueflows/process/blob/master/Transportation.md), transported resource enters the process
 
 ### Output
 
 * create - new resource created in that process
 * improve - in processes like repair or maintentance, same resource will appear in [vf:Input](https://github.com/valueflows/process/blob/master/Input.md) with *accept* verb
-* dropoff - specific for [vf:Transportation](https://github.com/valueflows/process/blob/master/Transportation.md), transported resource leaves the process
+* unload - specific for [vf:Transportation](https://github.com/valueflows/process/blob/master/Transportation.md), transported resource leaves the process
 
 ## Phases
 Input or Output doesn't change from one phase to another, each phase has distinct input/output with relationships to relevant input/output in other phases.
