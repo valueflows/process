@@ -32,6 +32,12 @@ vf:InputOrOutput
   rdfs:label "InputOrOutput" .
   
 # Properties
+  
+vf:io
+  a owl:ObjectProperty ;
+  rdfs:label "io" ;
+  rdfs:domain vf:Process ;
+  rdfs:range vf:InputOrOutput .
 
 vf:load
   a rdf:Property ;
