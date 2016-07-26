@@ -46,6 +46,12 @@ vf:load
   rdfs:domain vf:InputOrOutput ;
   rdfs:range vf:Resource .
 
+vf:transport
+  a rdf:Property ;
+  rdfs:label "transport" ;
+  rdfs:domain vf:InputOrOutput ;
+  rdfs:range vf:Resource .
+
 vf:unload
   a rdf:Property ;
   rdfs:label "unload" ;
@@ -59,10 +65,10 @@ vf:context
   rdfs:domain vf:Process ;
   rdfs:range vf:Agent .
 
-vf:currentLocation
+vf:location
   a owl:ObjectProperty ;
-  rdfs:label "currentLocation" ;
-  rdfs:domain vf:Resource ;
+  rdfs:label "location" ;
+  rdfs:domain vf:InputOrOutput ;
   rdfs:range vf:Location .
 
 vf:contains
