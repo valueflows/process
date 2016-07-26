@@ -23,6 +23,10 @@ vf:Resource
   a owl:Class ;
   rdfs:label "Resource" .
 
+vf:Location
+  a owl:Class ;
+  rdfs:label "Location" .
+  
 # Properties
 
 vf:load
