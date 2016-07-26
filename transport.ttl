@@ -48,3 +48,9 @@ vf:context
   rdfs:label "context" ;
   rdfs:domain vf:Process ;
   rdfs:range vf:Agent .
+
+vf:currentLocation
+  a owl:ObjectProperty ;
+  rdfs:label "currentLocation" ;
+  rdfs:domain vf:Resource ;
+  rdfs:range vf:Location .
