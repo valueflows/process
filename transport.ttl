@@ -69,4 +69,16 @@ vf:provider
   a owl:ObjectProperty ;
   rdfs:label "provider" ;
   rdfs:domain vf:Resource ;
-  rdfs:range vf:Location .
+  rdfs:range vf:Agent .
+  
+vf:receiver
+  a owl:ObjectProperty ;
+  rdfs:label "receiver" ;
+  rdfs:domain vf:Resource ;
+  rdfs:range vf:Agent .
+    
+vf:carrier
+  a owl:ObjectProperty ;
+  rdfs:label "carrier" ;
+  rdfs:domain vf:Resource ;
+  rdfs:range vf:Agent .
