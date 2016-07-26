@@ -26,6 +26,10 @@ vf:Resource
 vf:Location
   a owl:Class ;
   rdfs:label "Location" .
+
+vf:InputOrOutput
+  a owl:Class ;
+  rdfs:label "InputOrOutput" .
   
 # Properties
 
@@ -33,14 +37,14 @@ vf:load
   a rdf:Property ;
   rdfs:label "load" ;
   rdfs:subPropertyOf vf:inflow ;
-  rdfs:domain vf:Transportation ;
+  rdfs:domain vf:InputOrOutput ;
   rdfs:range vf:Resource .
 
 vf:unload
   a rdf:Property ;
   rdfs:label "unload" ;
   rdfs:subPropertyOf vf:outflow ;
-  rdfs:domain vf:Transportation ;
+  rdfs:domain vf:InputOrOutput ;
   rdfs:range vf:Resource .
 
 vf:context
@@ -52,5 +56,17 @@ vf:context
 vf:currentLocation
   a owl:ObjectProperty ;
   rdfs:label "currentLocation" ;
+  rdfs:domain vf:Resource ;
+  rdfs:range vf:Location .
+
+vf:contains
+  a owl:ObjectProperty ;
+  rdfs:label "contains" ;
+  rdfs:domain vf:Resource ;
+  rdfs:range vf:Resource .
+  
+vf:provider
+  a owl:ObjectProperty ;
+  rdfs:label "provider" ;
   rdfs:domain vf:Resource ;
   rdfs:range vf:Location .
