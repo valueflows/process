@@ -36,7 +36,7 @@ vf:InputOrOutput
 vf:io
   a owl:ObjectProperty ;
   rdfs:label "io" ;
-  rdfs:domain vf:Process ;
+  rdfs:domain vf:Transportation ;
   rdfs:range vf:InputOrOutput .
 
 vf:load
@@ -74,17 +74,17 @@ vf:contains
 vf:provider
   a owl:ObjectProperty ;
   rdfs:label "provider" ;
-  rdfs:domain vf:Resource ;
+  rdfs:domain vf:InputOrOutput ;
   rdfs:range vf:Agent .
   
 vf:receiver
   a owl:ObjectProperty ;
   rdfs:label "receiver" ;
-  rdfs:domain vf:Resource ;
+  rdfs:domain vf:InputOrOutput ;
   rdfs:range vf:Agent .
     
 vf:carrier
   a owl:ObjectProperty ;
   rdfs:label "carrier" ;
-  rdfs:domain vf:Resource ;
+  rdfs:domain vf:InputOrOutput ;
   rdfs:range vf:Agent .
