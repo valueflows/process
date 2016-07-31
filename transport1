@@ -1,0 +1,114 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix qudt: <http://qudt.org/1.1/vocab/> .
+@prefix vf: <https://w3id.org/valueflows/> .
+
+# Classes
+
+vf:Agent
+  a owl:Class ;
+  rdfs:label "Agent" .
+
+vf:Process
+  a owl:Class ;
+  rdfs:label "Process" .
+
+vf:Transportation
+  a owl:Class ;
+  rdfs:label "Transportation" ;
+  rdfs:subClassOf vf:Process .
+
+vf:Resource
+  a owl:Class ;
+  rdfs:label "Resource" .
+
+vf:Location
+  a owl:Class ;
+  rdfs:label "Location" .
+
+vf:InputOrOutput
+  a owl:Class ;
+  rdfs:label "InputOrOutput";
+  rdfs:comment "This is the rea:EconomicEvent, which we need a name for" .
+  
+vf:EventType
+  a owl:Class ;
+  rdfs:label "EventType"  . 
+  
+# Properties
+  
+vf:io
+  a owl:ObjectProperty ;
+  rdfs:label "io" ;
+  rdfs:domain vf:Transportation ;
+  rdfs:range vf:InputOrOutput .
+
+vf:load
+  a vf:EventType ;
+  rdfs:label "load" .
+
+vf:unload
+  a vf:EventType ;
+  rdfs:label "unload" .
+
+vf:action
+  a rdf:Property ;
+  rdfs:label "action" ;
+  rdfs:domain vf:InputOrOutput ;
+  rdfs:range vf:load, vf:unload .  
+  
+vf:resource
+  a rdf:Property ;
+  rdfs:label "resource" ;
+  rdfs:domain vf:InputOrOutput ;
+  rdfs:range vf:Resource .
+  
+vf:transportResource
+  a rdf:Property ;
+  rdfs:label "transport" ;
+  rdfs:domain vf:InputOrOutput ;
+  rdfs:range vf:Resource .
+  
+vf:quantity
+  a qudt:QuantityValue ;
+  rdfs:label "quantity" ;
+  rdfs:domain vf:InputOrOutput, vf:Resource ;
+  rdfs:range qudt:QuantityValue .
+
+vf:context
+  a owl:ObjectProperty ;
+  rdfs:label "context" ;
+  rdfs:domain vf:Process ;
+  rdfs:range vf:Agent .
+
+vf:location
+  a owl:ObjectProperty ;
+  rdfs:label "location" ;
+  rdfs:domain vf:InputOrOutput ;
+  rdfs:range vf:Location .
+
+vf:contains
+  a owl:ObjectProperty ;
+  rdfs:label "contains" ;
+  rdfs:domain vf:Resource ;
+  rdfs:range vf:Resource .
+  
+vf:provider
+  a owl:ObjectProperty ;
+  rdfs:label "provider" ;
+  rdfs:domain vf:InputOrOutput ;
+  rdfs:range vf:Agent .
+  
+vf:receiver
+  a owl:ObjectProperty ;
+  rdfs:label "receiver" ;
+  rdfs:domain vf:InputOrOutput ;
+  rdfs:range vf:Agent .
+    
+vf:carrier
+  a owl:ObjectProperty ;
+  rdfs:label "carrier" ;
+  rdfs:domain vf:InputOrOutput ;
+  rdfs:range vf:Agent .
