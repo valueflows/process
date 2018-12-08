@@ -1,7 +1,7 @@
  {
   "@context": [
     "https://w3id.org/role/",
-    "https://rawgit.com/valueflows/process/master/context.jsonld",
+    "https://cdn.jsdelivr.net/gh/valueflows/process/context.jsonld",
     {
       "role": "https://w3id.org/role/",
       "lgd": "http://linkedgeodata.org/triplify/",
